@@ -1,11 +1,12 @@
 <?php
 session_start();
-// التأكد واش المستخدم داخل
 if (!isset($_SESSION['name'])) {
     header("Location: index.php");
     exit();
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
