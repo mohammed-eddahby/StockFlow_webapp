@@ -30,6 +30,7 @@ session_unset();
         <!-- Register Form -->
         <div class="form-box <?php echo ($activeForm === 'register') ? 'active' : ''; ?>" id="registerForm">
             <h2>Register</h2>
+            <h3>Create your account</h3>
             <?php if($reg_err) echo "<div class='error-message'>$reg_err</div>"; ?>
             <form action="login_register.php" method="POST">
                 <input type="text" name="name" placeholder="Full Name" required>
