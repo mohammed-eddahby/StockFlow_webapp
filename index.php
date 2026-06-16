@@ -442,7 +442,6 @@ $active_form = isset($_SESSION['active_form']) ? $_SESSION['active_form'] : 'log
 
         updateToggleState();
 
-        // High-frequency canvas interaction simulation injection
         const viewer = document.querySelector('spline-viewer');
         if (viewer) {
             viewer.addEventListener('load', () => {
